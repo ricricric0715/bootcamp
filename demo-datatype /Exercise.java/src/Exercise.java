@@ -17,5 +17,7 @@ public class Exercise {
         int x = elros + elliot;
         System.out.println(x);
 
+
+        
     }
 }
