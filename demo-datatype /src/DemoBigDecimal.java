@@ -40,9 +40,16 @@ public class DemoBigDecimal {
     double result2 = BigDecimal.valueOf(0.1).multiply(BigDecimal.valueOf(0.2)).doubleValue();
     System.out.println(result2);
 
-    System.out.println(0.3 / 0.1);
+    double result22 = BigDecimal.valueOf(0.5).multiply(BigDecimal.valueOf(0.7)).doubleValue();
+    System.out.println(result22);
+    
+    System.out.println(0.3 / 0.1); // 2.999999996
     double result3 = BigDecimal.valueOf(0.3).divide(BigDecimal.valueOf(3)).doubleValue();
     System.out.println(result3);
+
+    double result33 = BigDecimal.valueOf(0.9).divide(BigDecimal.valueOf(0.3)).doubleValue();
+    System.out.println(result33);
+    
 
     //10/3 --> 3.3333333333
     
