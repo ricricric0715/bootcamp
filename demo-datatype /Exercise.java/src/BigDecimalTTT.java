@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class BigDecimal練習 {
+public class BigDecimalTTT {
   public static void main(String[] args) {
     
 

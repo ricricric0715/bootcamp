@@ -1,4 +1,4 @@
-public class if練習 {
+public class IfTTT {
   public static void main(String[] args) {
     
     int age = 18;
@@ -31,10 +31,30 @@ public class if練習 {
       System.out.println("birthday");
     }
 
+    if (elliot > 12) {
+      System.out.println("中學生");
+    } else {
+      System.out.println("小學生");
+    }
+    
     int g = 19;
     if ( g > 18){
       System.out.println("man");
     }
+
+    
+    int r = 50000;
+    if (r > 50000){
+      System.out.println("ELITE");
+    } else if ( r > 30000){
+      System.out.println("RS");
+    } else {
+      System.out.println("NOVA");
+    }
+// RS
+
+
+
 
   }
 }

@@ -39,6 +39,7 @@ public class Empolyee { // An empolyee has name, age and email
     String empolyee2Email = "steven@gmail.com";
 
     // Solution - Class and Object 
+    
     Empolyee e1 = new Empolyee();
     Empolyee e2 = new Empolyee();
     e1.setName("john"); 

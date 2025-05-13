@@ -1,4 +1,4 @@
-public class String練習 {
+public class StringTTT {
   public static void main(String[] args) {
     
     String s3 = "Peter";
