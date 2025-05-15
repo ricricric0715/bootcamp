@@ -12,7 +12,7 @@ public class Running extends Shoe {
   }
 
   public int getSize(){
-    return getSize();
+    return this.size;
   }
 
 
@@ -20,7 +20,7 @@ public static void main(String[] args) {
 
   Running running = new Running(200, 9);
   System.out.println(running.getPrice());
-System.out.println(running.getSize());
+  System.out.println(running.getSize());
 
   }
 }
