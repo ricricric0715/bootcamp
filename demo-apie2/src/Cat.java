@@ -18,6 +18,7 @@ public class Cat extends Animal {
     return this.getName();
   }
 
+  @Override 
   public int getAge(){
     return super.getAge() + 10;
   }

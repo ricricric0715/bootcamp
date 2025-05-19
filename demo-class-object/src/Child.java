@@ -1,57 +1,76 @@
 public class Child {
-  // static = common attribute , not belongs to any object 
-  // but all object can access the static varible 
-  private static int counter = 0; // important 
-  // Every child object has id , firstname, lastname , but no counter
-  // Attribute (Instance varible)
-  // Instance = object 
-  private long id;
-  private String firstname; 
-  private String lastname; 
+  // ! static -> common attribute, NOT belongs to any object
+  // ! but all objects can access the static variable
+  private static int counter = 0;
 
-   // Constructor
-  public Child (String firstname, String lastname){
+  // Every Child object has id, firstName and lastName. But no counter.
+  // Attribute (Instance variable)
+  // Instance = object
+  private long id;
+  private String firstName;
+  private String lastName;
+
+  // constructor
+  public Child(String firstName, String lastName) {
     counter++;
     this.id = counter;
-    this.firstname = firstname; 
-    this.lastname = lastname;
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 
-  // getter 
-  public long getId(){
+  public Child(long id) {
+    this.id = id;
+  }
+
+  // getter
+  public long getId() {
     return this.id;
   }
 
-  public String getFirstname(){ 
-  return this.firstname;
+  // ! Encapsulation
+  public String fullName() {
+    return this.firstName + " " + this.lastName;
   }
 
-  public String getLastname(){
-    return this.lastname;
+  public String getFirstName() {
+    return this.firstName;
   }
 
-  // !Rewrite ths definition of Child in youe World 
-  public boolean equals(Child child){
+  public String getLastName() {
+    return this.lastName;
+  }
+
+  // public String getHKID() {
+  // return this.hkid;
+  // }
+
+  // ! Rewrite the definition of Child in your world.
+  public boolean equals(Child child) {
     return this.id == child.getId();
   }
 
+
   public static void main(String[] args) {
     Child c1 = new Child("Leo", "Chan");
-    
+
     // Approach 1
-    if(c1.getFirstname().equals("Leo")&& c1.getLastname().equals("Chan"));{
-      System.out.println("He is Leo Chan");
+    if (c1.getFirstName().equals("Leo") && c1.getLastName().equals("Chan")) {
+      System.out.println("He is Leo Chan.");
     }
-     
-    // Approach 2 
-    System.out.println(c1.equals(new Child ("Vincent", "Chan")));
-    System.out.println(c1.equals(new Child ("Leo", "Lau")));
-    System.out.println(c1.equals(new Child ("Leo", "Chan")));
+
+    // Approach 2
+    System.out.println(c1.equals(new Child("Leo", "Chan"))); // true
+    System.out.println(c1.equals(new Child("Leo", "Lau"))); // false
+    System.out.println(c1.equals(new Child("Peter", "Lau"))); // false
+    System.out.println(c1.equals(new Child("Peter", "Chan"))); // false
 
     Child c2 = new Child("Leo", "Wong");
-    System.out.println(c2.getId());
-    System.out.println(c2.equals(new Child("Leo", "Wong")));
+    System.out.println(c2.getId()); // 6
 
+    Child c3 = new Child("Leo", "Wong");
+    System.out.println(c2.equals(new Child(6))); // true
+    System.out.println(c2.getFirstName().equals("Leo")); // true
+    System.out.println(c2.getLastName().equals("Wong")); // true
 
   }
 }
