@@ -6,6 +6,6 @@ public class DemoInheritance {
     // I = Inheritance (Parent Class: Concrete / Abstract)
     // E = Encapsulation
     
-  }
 
+  }
 }

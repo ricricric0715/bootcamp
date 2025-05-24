@@ -8,7 +8,14 @@ public class DemoInheritance {
     // I = Inheritance 
     // E = Encapsulation 
 
+    // A and I --> Polymorphism 
+    // E --> 封裝 
+
+    
+
+
+
+
 
   }
-
 }
