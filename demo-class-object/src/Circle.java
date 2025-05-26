@@ -6,6 +6,7 @@ public class Circle {
   private String color;
 // private double area; // violate oop concept
 
+
 // Constructor (all args constructor)
 public Circle(double radius, String color){
   this.radius = radius; 
