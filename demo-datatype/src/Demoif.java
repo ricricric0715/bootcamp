@@ -31,7 +31,7 @@ public class Demoif {
       // w between 103 and 110, print "DEF"
       // for other value , print "XYZ"
 
-      int w = 40;
+      int w = 11;
       if (w < 100) {
         System.out.println("if w smaller than 100, print abc");
       } else if (w >= 103 && w <= 110) {
